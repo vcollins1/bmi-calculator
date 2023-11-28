@@ -1,0 +1,4 @@
+.vscode
+*.xd
+.DS_Store
+.prettierignore
