@@ -19,7 +19,7 @@ This is a solution to the [Body Mass Index Calculator challenge on Frontend Ment
 | ------------------------------------------- | ------------------------------------------- | ------------------------------------------  | ------------------------------------------- |
 | ![view1](./assets/images/mobile-view-1.png) | ![view2](./assets/images/mobile-view-2.png) | ![view3](./assets/images/mobile-view-3.png) | ![view4](./assets/images/mobile-view-4.png) |
 
-#### Tabley View
+#### Tablet View
 | Veiw One                                    | View Two                                    | View Three                                  |
 | ------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
 | ![view1](./assets/images/tablet-view-1.png) | ![view2](./assets/images/tablet-view-2.png) | ![view3](./assets/images/tablet-view-3.png) |
