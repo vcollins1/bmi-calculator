@@ -234,3 +234,118 @@ HERO - BMI Calculator
 .range {
   font-weight: bolder;
 }
+
+/********************
+MAIN
+*********************/
+
+.main {
+  width: 375px;
+  margin: 0 auto;
+}
+
+.your-result {
+  margin: 72px 0;
+  position: relative;
+}
+
+.your-result::before {
+  content: "";
+  width: 375px;
+  height: 522px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  top: 300px;
+  z-index: -1;
+}
+
+.your-result img {
+  width: 100%;
+  margin-bottom: 48px;
+}
+
+.your-result__content {
+  width: 328px;
+  margin: 0 auto;
+}
+
+.your-result__content h3 {
+  font-size: 32px;
+  line-height: 110%;
+  margin-bottom: 32px;
+}
+
+.your-result__content p {
+  font-size: 16px;
+  line-height: 150%;
+  color: #5E6E85;
+}
+
+.tips {
+  padding: 56px 20px;
+}
+
+.tip {
+  margin-bottom: 40px;
+}
+
+.tip__icon {
+  margin-bottom: 32px;
+  width: 64px;
+}
+
+.tip__heading {
+  margin-bottom: 24px;
+}
+
+.tip__content {
+  font-size: 16px;
+  line-height: 150%;
+  color: #5E6E85;
+}
+
+.tip--last {
+  margin-bottom: 0;
+}
+
+.bmi-limit {
+  padding: 72px 24px 96px;
+  text-align: center;
+  background: linear-gradient(#fbfeff 5%, #D6E6FE 95%);
+}
+
+.bmi-limit > div > p {
+  margin-bottom: 56px;
+  margin-top: 32px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5E6E85;
+}
+
+.limit__item {
+  background: #fff;
+  padding: 24px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.limit__item > p {
+  text-align: left;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 150%;
+  color: #5E6E85;
+}
+
+.limit__item--last {
+  margin-bottom: 0;
+}
+
+.limit__item .header {
+  display: flex;
+}
+
+.header__icon {
+  margin-right: 16px;
+}
