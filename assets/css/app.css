@@ -132,9 +132,18 @@ HERO - BMI Calculator
   text-align: left;
 }
 
+.input:focus-within {
+  outline: 1px solid #345ff6;
+}
+
 .input__field {
   width: 127px;
 }
+
+.input__field:focus {
+  outline: none;
+}
+
 
 .form__inputs label:first-child {
   display: block;
@@ -161,11 +170,33 @@ HERO - BMI Calculator
 .unit {
   display: inline-block;
   color: #345ff6;
+  width: 35px;
   margin-left: 60px;
+  text-align: right;
 }
 
 .form__inputs--imperial {
   display: none;
+}
+
+.imperial-inputs {
+  display: flex;
+}
+
+.imperial-inputs .input {
+  width: 132px;
+}
+
+.imperial-inputs .input:first-child {
+  margin-right: 16px;
+}
+
+.imperial-inputs .input__field {
+  width: 40px;
+}
+
+.imperial-inputs .unit {
+  margin-left: 0;
 }
 
 .results {
@@ -186,4 +217,20 @@ HERO - BMI Calculator
 
 .results__welcome p {
   font-size: 14px;
+  line-height: 150%;
+}
+
+.results_bmi h3 {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.bmi {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 8px 0 24px;
+}
+
+.range {
+  font-weight: bolder;
 }

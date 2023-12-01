@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <title>Body Mass Index Calculator</title>
   <link rel="stylesheet" href="./assets/css/app.css">
+  <script src="./assets/scripts/app.js" defer></script>
 </head>
 <body>
   <header class="hero">
@@ -20,8 +21,8 @@
 
     <div class="bmi-calculator">
       <h2>Enter your details below</h2>
-      <form class="form">
-        <dev class="form__units">
+      <form class="form metric-form" action="/">
+        <div class="form__units">
           <label for="metric" class="radio">
             <input type="radio" name="selection" value="metric" id="metric" class="radio__input" checked>
             <div class="radio__button"></div>
@@ -33,7 +34,7 @@
             <div class="radio__button"></div>
             <span class="radio__text">Imperial</span>
           </label>
-        </dev>
+        </div>
 
         <div class="form__inputs form__inputs--metric">
           <label>
@@ -56,7 +57,7 @@
         <div class="form__inputs form__inputs--imperial">
           <label>
             <span class="title">Height</span>
-            <div class="imperial">
+            <div class="imperial-inputs">
               <div class="input" tabindex="1">
                 <input type="number" placeholder="0" id="imperial-height-ft" class="input__field" name="height">
                 <span class="unit">ft</span>
@@ -71,7 +72,7 @@
 
           <label>
             <span class="title">Weight</span>
-            <div class="imperial">
+            <div class="imperial-inputs">
               <div class="input" tabindex="3">
                 <input type="number" placeholder="0" id="imperial-weight-st" class="input__field" name="weight">
                 <span class="unit">st</span>
@@ -84,6 +85,8 @@
             </div>
           </label>
         </div>
+
+        <input type="submit" hidden>
       </form>
 
       <div class="results">
