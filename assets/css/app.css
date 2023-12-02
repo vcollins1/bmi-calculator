@@ -35,7 +35,7 @@ HERO
 }
 
 .hero__logo {
-  margin-top: 32px;
+  padding-top: 32px;
 }
 
 .hero__content {
@@ -472,5 +472,162 @@ MAIN
 
   .limit__item:nth-child(odd) {
     margin-right: 16px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    width: 1440px;
+    text-align: left;
+  }
+
+  .hero::before {
+    width: 978px;
+    height: 675px;
+    margin-left: 24px;
+  }
+
+  .bmi {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .hero__content {
+    width: 564px;
+  }
+
+  .bmi-calculator {
+    width: 564px;
+  }
+
+  .hero__logo,
+  .hero__content,
+  .bmi-calculator {
+    margin-left: 140px;
+  }
+
+  .hero__logo {
+    padding-top: 75px;
+  }
+
+  .hero__content h1 {
+    margin-left: 0;
+  }
+
+  .form__inputs.form__inputs--metric {
+    width: 238px;
+    flex-wrap: nowrap;
+  }
+
+  .input {
+    width: 238px;
+    height: 69px;
+  }
+
+  .results {
+    width: 500px;
+    height: 166px;
+  }
+
+  .unit {
+    margin: 0;
+  }
+
+  .main {
+    margin: 0 auto;
+    width: 1440px;
+  }
+
+  .your-result__content {
+    margin: 0 auto 70px;
+  }
+
+  .your-result {
+    width: 1160px;
+    transform: none;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-end;
+  }
+
+  .your-result::before {
+    width: 1160px;
+    height: 600px;
+  }
+
+  .your-result > img {
+    width: 564px;
+  }
+
+  .tips {
+    display: flex;
+    justify-content: space-between;
+    width: 1160px;
+    margin: auto;
+  }
+
+  .tip {
+    flex-direction: column;
+    width: 365px;
+  }
+
+  .bmi-limit {
+    width: 1160px;
+    height: 754px;
+    margin: auto;
+    display: flex;
+    text-align: left;
+    position: relative;
+  }
+
+  .bmi-limit > div > p {
+    width: 564px;
+  }
+
+
+  .limit {
+    flex-wrap: wrap-reverse;
+    justify-content: flex-start;
+    width: 961px;
+    position: absolute;
+    left: 150px;
+  }
+
+  .limit__item {
+    width: 365px;
+    padding: 18px;
+    margin: 0;
+  }
+
+  .pregnancy {
+    order: 1;
+    margin-right: 31px;
+  }
+
+  .race {
+    order: 2;
+  }
+
+  .age {
+    order: 3;
+    margin-left:200px;
+    margin-bottom: 24px;
+  }
+
+  .muscle {
+    order: 4;
+    margin-right: 0;
+    margin-left: 31px;
+    margin-bottom: 24px;
+  }
+
+  .gender {
+    order: 5;
+    margin-left:500px;
+    margin-bottom: 32px;
+  }
+
+  .limit__item:nth-child(odd) {
+    margin-right: 0;
   }
 }

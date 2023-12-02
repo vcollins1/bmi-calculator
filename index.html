@@ -10,91 +10,94 @@
 </head>
 <body>
   <header class="hero">
-    <img src="./assets/images/logo.svg" alt="Logo" class="hero__logo">
-    <div class="hero__content">
-      <h1>Body Mass Index Calculator</h1>
-      <p>Better understand your weight in relation to your height using our 
-        body mass index (BM) calculator. While BMI is not the sole determinant 
-        of a healthy weight, it offers a valuable starting point to evaluate 
-        your overall health and well-being.</p>
-    </div>
+    <div class="hero__logo"><img src="./assets/images/logo.svg" alt="Logo"></div>
 
-    <div class="bmi-calculator">
-      <h2>Enter your details below</h2>
-      <form class="form metric-form" action="/">
-        <div class="form__units">
-          <label for="metric" class="radio">
-            <input type="radio" name="selection" value="metric" id="metric" class="radio__input" checked>
-            <div class="radio__button"></div>
-            <span class="radio__text">Metric</span>
-          </label>
-
-          <label for="imperial" class="radio">
-            <input type="radio" name="selection" value="imperial" id="imperial" class="radio__input">
-            <div class="radio__button"></div>
-            <span class="radio__text">Imperial</span>
-          </label>
-        </div>
-
-        <div class="form__inputs form__inputs--metric">
-          <label>
-            <span class="title">Height</span>
-            <div class="input" tabindex="0">
-              <input type="number" placeholder="0" id="metric-height" class="input__field" name="height">
-              <span class="unit">cm</span>
-            </div>
-          </label>
-
-          <label>
-            <span class="title">Weight</span>
-            <div class="input" tabindex="1">
-              <input type="number" placeholder="0" id="metric-weight" class="input__field" name="weight">
-              <span class="unit">kg</span>
-            </div>
-          </label>
-        </div>
-
-        <div class="form__inputs form__inputs--imperial">
-          <label>
-            <span class="title">Height</span>
-            <div class="imperial-inputs">
+    <div class="bmi">
+      <div class="hero__content">
+        <h1>Body Mass Index Calculator</h1>
+        <p>Better understand your weight in relation to your height using our 
+          body mass index (BM) calculator. While BMI is not the sole determinant 
+          of a healthy weight, it offers a valuable starting point to evaluate 
+          your overall health and well-being.</p>
+      </div>
+  
+      <div class="bmi-calculator">
+        <h2>Enter your details below</h2>
+        <form class="form metric-form" action="/">
+          <div class="form__units">
+            <label for="metric" class="radio">
+              <input type="radio" name="selection" value="metric" id="metric" class="radio__input" checked>
+              <div class="radio__button"></div>
+              <span class="radio__text">Metric</span>
+            </label>
+  
+            <label for="imperial" class="radio">
+              <input type="radio" name="selection" value="imperial" id="imperial" class="radio__input">
+              <div class="radio__button"></div>
+              <span class="radio__text">Imperial</span>
+            </label>
+          </div>
+  
+          <div class="form__inputs form__inputs--metric">
+            <label>
+              <span class="title">Height</span>
+              <div class="input" tabindex="0">
+                <input type="number" placeholder="0" id="metric-height" class="input__field" name="height">
+                <span class="unit">cm</span>
+              </div>
+            </label>
+  
+            <label>
+              <span class="title">Weight</span>
               <div class="input" tabindex="1">
-                <input type="number" placeholder="0" id="imperial-height-ft" class="input__field" name="height">
-                <span class="unit">ft</span>
+                <input type="number" placeholder="0" id="metric-weight" class="input__field" name="weight">
+                <span class="unit">kg</span>
               </div>
+            </label>
+          </div>
   
-              <div class="input" tabindex="2">
-                <input type="number" placeholder="0" id="imperial-height-in" class="input__field" name="height">
-                <span class="unit">in</span>
+          <div class="form__inputs form__inputs--imperial">
+            <label>
+              <span class="title">Height</span>
+              <div class="imperial-inputs">
+                <div class="input" tabindex="1">
+                  <input type="number" placeholder="0" id="imperial-height-ft" class="input__field" name="height">
+                  <span class="unit">ft</span>
+                </div>
+    
+                <div class="input" tabindex="2">
+                  <input type="number" placeholder="0" id="imperial-height-in" class="input__field" name="height">
+                  <span class="unit">in</span>
+                </div>
               </div>
-            </div>
-          </label>
-
-          <label>
-            <span class="title">Weight</span>
-            <div class="imperial-inputs">
-              <div class="input" tabindex="3">
-                <input type="number" placeholder="0" id="imperial-weight-st" class="input__field" name="weight">
-                <span class="unit">st</span>
-              </div>
+            </label>
   
-              <div class="input" tabindex="4">
-                <input type="number" placeholder="0" id="imperial-weight-lbs" class="input__field" name="height">
-                <span class="unit">lbs</span>
+            <label>
+              <span class="title">Weight</span>
+              <div class="imperial-inputs">
+                <div class="input" tabindex="3">
+                  <input type="number" placeholder="0" id="imperial-weight-st" class="input__field" name="weight">
+                  <span class="unit">st</span>
+                </div>
+    
+                <div class="input" tabindex="4">
+                  <input type="number" placeholder="0" id="imperial-weight-lbs" class="input__field" name="height">
+                  <span class="unit">lbs</span>
+                </div>
               </div>
-            </div>
-          </label>
+            </label>
+          </div>
+  
+          <input type="submit" hidden>
+        </form>
+  
+        <div class="results">
+          <div class="results__welcome">
+            <h3>Welcome!</h3>
+            <p>Enter your height and weight and you'll see you BMI results here</p>
+          </div>
+          <div class="results__bmi"></div>
         </div>
-
-        <input type="submit" hidden>
-      </form>
-
-      <div class="results">
-        <div class="results__welcome">
-          <h3>Welcome!</h3>
-          <p>Enter your height and weight and you'll see you BMI results here</p>
-        </div>
-        <div class="results__bmi"></div>
       </div>
     </div>
   </header>

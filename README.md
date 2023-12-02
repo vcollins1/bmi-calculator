@@ -24,6 +24,11 @@ This is a solution to the [Body Mass Index Calculator challenge on Frontend Ment
 | ------------------------------------------- | ------------------------------------------- | ------------------------------------------- |
 | ![view1](./assets/images/tablet-view-1.png) | ![view2](./assets/images/tablet-view-2.png) | ![view3](./assets/images/tablet-view-3.png) |
 
+#### Desktop View
+| Veiw One                                    | View Two                                    |
+| ------------------------------------------- | ------------------------------------------- |
+| ![view1](./assets/images/desktop-view-1.png) | ![view2](./assets/images/desktop-view-2.png) |
+
 ## My process
 
 ### Built with
