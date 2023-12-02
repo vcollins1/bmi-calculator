@@ -5,7 +5,7 @@ const form = document.querySelector(".form");
 
 let bmiRanges;
 let bmiWeight;
-fetch("../../bmi.json").then(response => {
+fetch("./bmi.json").then(response => {
     return response.json();
 }).then(obj => {
     bmiRanges = obj["bmiRanges"];
