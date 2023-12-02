@@ -28,7 +28,7 @@ HERO
   width: 375px;
   height: 640px;
   margin: 0 auto;
-  background: linear-gradient(125deg, #fbfeff 0%, #D6E6FE 100%);
+  background: linear-gradient(to right bottom, #fbfeff 0, #D6E6FE);
   position: absolute;
   border-radius: 0 0 35px 35px;
   z-index: -1;
@@ -131,8 +131,8 @@ HERO - BMI Calculator
   justify-content: space-between;
   border: 1px solid #d8e2e7;
   border-radius: 12px;
-  padding: 20px 24px;
   text-align: left;
+  overflow: hidden;
 }
 
 .input:focus-within {
@@ -141,6 +141,9 @@ HERO - BMI Calculator
 
 .input__field {
   width: 127px;
+  flex: 1;
+  padding: 20px 24px;
+  padding-right: 0;
 }
 
 .input__field::-webkit-outer-spin-button,
@@ -178,9 +181,12 @@ HERO - BMI Calculator
 .unit {
   display: inline-block;
   color: #345ff6;
-  width: 35px;
+  width: 100px;
   margin-left: 60px;
   text-align: right;
+  padding: 20px 0;
+  padding-right: 24px;
+
 }
 
 .form__inputs {
@@ -273,17 +279,6 @@ MAIN
   position: relative;
 }
 
-.your-result::before {
-  content: "";
-  width: 375px;
-  height: 522px;
-  background: #fff;
-  display: block;
-  position: absolute;
-  top: 300px;
-  z-index: -1;
-}
-
 .your-result img {
   width: 100%;
   margin-bottom: 48px;
@@ -308,6 +303,9 @@ MAIN
 
 .tips {
   padding: 56px 20px;
+  background: linear-gradient(to right bottom, rgba(250, 254, 255, 0.3), rgba(214, 231, 255, 0.2));
+  margin-bottom: 56px;
+  border-radius: 20px;
 }
 
 .tip {
@@ -334,9 +332,11 @@ MAIN
 }
 
 .bmi-limit {
-  padding: 72px 24px 96px;
+  padding: 24px;
   text-align: center;
-  background: linear-gradient(#fbfeff 5%, #D6E6FE 95%);
+  background: linear-gradient(to right bottom, rgba(250, 254, 255, 0.3), rgba(214, 231, 255, 0.2));
+  border-radius: 20px;
+  margin-bottom: 96px;
 }
 
 .bmi-limit > div > p {
@@ -490,7 +490,7 @@ MAIN
 @media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
-    margin: 0 auto;
+    margin: 0 auto 96px;
     position: relative;
   }
 
@@ -501,7 +501,7 @@ MAIN
     display: block;
     background: url("../images/pattern-curved-line-left.svg") no-repeat;
     position: absolute;
-    top: 650px;
+    top: 725px;
     right: 250px;
   }
 
@@ -512,8 +512,8 @@ MAIN
     display: block;
     background: url("../images/pattern-curved-line-right.svg") no-repeat;
     position: absolute;
-    bottom: 350px;
-    left: 300px;
+    bottom: 400px;
+    left: 325px;
   }
 
   .hero {
@@ -593,6 +593,7 @@ MAIN
   .your-result {
     width: 1160px;
     transform: none;
+    margin-top: 150px;
     margin-left: auto;
     margin-right: auto;
     align-items: flex-end;
@@ -622,7 +623,7 @@ MAIN
   .bmi-limit {
     width: 1160px;
     height: 754px;
-    margin: auto;
+    margin: 56px auto 0;
     display: flex;
     text-align: left;
     position: relative;
