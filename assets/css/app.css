@@ -488,6 +488,34 @@ MAIN
 }
 
 @media screen and (min-width: 1440px) {
+  .container {
+    width: 1440px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .container::before {
+    content: "";
+    width: 85px;
+    height: 200px;
+    display: block;
+    background: url("../images/pattern-curved-line-left.svg") no-repeat;
+    position: absolute;
+    top: 650px;
+    right: 250px;
+  }
+
+  .container::after {
+    content: "";
+    width: 94px;
+    height: 122px;
+    display: block;
+    background: url("../images/pattern-curved-line-right.svg") no-repeat;
+    position: absolute;
+    bottom: 350px;
+    left: 300px;
+  }
+
   .hero {
     width: 1440px;
     text-align: left;
@@ -510,12 +538,16 @@ MAIN
 
   .bmi-calculator {
     width: 564px;
+    margin: 0;
   }
 
   .hero__logo,
-  .hero__content,
-  .bmi-calculator {
+  .hero__content {
     margin-left: 140px;
+  }
+
+  .hero__content {
+    margin-right: 0;
   }
 
   .hero__logo {
@@ -524,6 +556,10 @@ MAIN
 
   .hero__content h1 {
     margin-left: 0;
+  }
+
+  .hero__content p {
+    width: 465px;
   }
 
   .form__inputs.form__inputs--metric {
