@@ -36,3 +36,6 @@ This is a solution to the [Body Mass Index Calculator challenge on Frontend Ment
 - Mobile-first workflow
 - Semantic HTML5 markup
 - Flexbox
+
+## My Solution Link
+View Site: [BMI Calculator](https://vcollins1.github.io/bmi-calculator/)
