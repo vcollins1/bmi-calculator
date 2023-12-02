@@ -216,6 +216,7 @@ HERO - BMI Calculator
   width: 280px;
   height: 257px;
   background: linear-gradient(125deg, #345FF6, #587DFF);
+  border: none;
   border-radius: 16px;
   padding: 32px;
   text-align: left;
@@ -423,6 +424,7 @@ MAIN
     width: 622px;
     height: 149px;
     border-radius: 16px 100px 100px 16px;
+    cursor: pointer;
   }
 
   .results__welcome h3 {
